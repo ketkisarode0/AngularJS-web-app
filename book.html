@@ -1,0 +1,59 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="scripts/bookscript.js"></script>
+    <link rel="stylesheet" href="css/bookpage.css">
+
+    <Title>  Heyy this is your project!</Title>
+
+    <body ng-app="myApp">
+            <h1>FOOD BLOG</h1>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <div class="row">
+                 <div class="col-sm-3" style="background-color:#aaa;">
+                      <h2>Home</h2>
+                      <h2>Book</h2>                      
+                 </div>
+   
+                 <div class="col-sm-6" style="background-color:#bbb;">
+                      
+                      <div ng-app="myApp" ng-controller="tableCtrl"> 
+                      <b>search:</b> <input type="text" placeholder="Search here" ng-model="searchText"> <!-- filter to 
+                           search inside table-->
+                           <br>  </br>
+                           <table>
+                                <thead>
+                                    <tr>
+                                            <th>BookId</th>
+                                            <th>BookName</th>
+                                            <th>Author</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody ng-repeat="b in Books | filter: searchText"> 
+                                            <tr>
+                                                <td>{{b.BookId}}</td>
+                                                <td>{{b.BookName}}</td>
+                                                <td>{{b.Author}}</td>
+                                            </tr>
+                                        </tbody>
+                                    
+                                    
+                            </table>
+                         </div>
+                </div>
+             
+               <div class="col-sm-3" style="background-color:#ccc;">
+                 <h2>Column 3</h2>
+                 <p>Some text..</p>
+                 </div>
+
+                
+            </div>  
+
+
+
+            
+            
+           
+    </body>
+</html>
