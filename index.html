@@ -1,35 +1,50 @@
 <html>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="scripts/mainscripts.js"></script> 
     <link rel="stylesheet" href="css/mainpage.css">
+    <script src="js/bootstrap.min.js"></script>
     
-
     <Title>Food Blog</Title>
 
     <body ng-app="myApp">
-            <h1>FOOD BLOG</h1>
+                <ul>
+                    <li><a class="active" href="#!home">Home</a></li>
+                    <li><a href="#!Book">Books</a></li>
+                </ul>
+                <h1><b>FOOD BLOG</b></h1>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <div class="row">
-                <div class="col-sm-3" style="background-color:#aaa;">
-                        <h2><a href='#!Home'>Home</a></h2>
-                        <h2><a href='#!Book'>Book</a></h2>
+                <div class="col-sm-2">
+                        <!-- <h2 id><a tabindex="0" href='#!Home'>Home</a></h2>
+                        <h2 id><a tabindex="0" href='#!Book'>Books</a></h2> -->
                                            
                 </div>
    
-                <div class="col-sm-6" style="background-color:#bbb;">
-                    
-                    <!-- <div class="col-lg-6">
-                            <img src = "images/home_image3.jpeg" alt="homePageImage" />
-                    </div> -->
-                    
+                <div class="col">
                     <ng-view>  </ng-view>
                 </div>
              
-                <div class="col-sm-3" style="background-color:#ccc;">
-                     <h2>Column 3</h2>
-                     <p>Some text..</p>
-                </div>
+                <div class="col-sm-3 thirdcol">
+                     
+                     <h2>Receipes</h2>
+                     <p> <a href = "https://www.youtube.com/results?search_query=pizza+receipe+english" target="_blank"> &#9829; Yummy Cheese Pizza.. </a></p>
+                     <p><a href = "https://www.youtube.com/results?search_query=Dhokala+Receipe+english"> &#9829; Dhokala Receipe...</a></p>
+                     <p><a href = "https://www.youtube.com/results?search_query=Sandwitch+in+5+minutes"> &#9829; Sandwitch in 5 minutes...</a></p>
+                     <p><a href = "https://www.youtube.com/results?search_query=Palak+parathas">&#9829; Palak parathas...</a></p>
+                     <p><a href = "https://www.youtube.com/results?search_query=Paneer+butter+masala">&#9829; Paneer butter masala...</a></p>
+                     <p><a href = "https://www.youtube.com/results?search_query=+Dumm+Biryani+receipe"> &#9829; Dumm Biryani...</a></p>
+                     
+                
+                    </div>
             </div>  
+
+        
     </body>
 </html>

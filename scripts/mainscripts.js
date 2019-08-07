@@ -29,5 +29,5 @@ app.controller('tableCtrl', function($scope){
             { BookId: 3, BookName: "Suzanne Mathews", Author: "France" },
             { BookId: 4, BookName: "Robert Schidner", Author: "Russia" }
             ];
-    
 });
+

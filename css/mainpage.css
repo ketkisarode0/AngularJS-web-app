@@ -1,10 +1,18 @@
-
-
-h1{
-  color:  rgb(151, 49, 83);
-  background-color: antiquewhite;
+*:focus{
+outline:1px solid;
 }
 
+h1{
+  color: rgb(94, 40, 40);
+  background-color: rgb(209, 176, 143);
+  text-align: center; 
+  font-style: Impact, Charcoal, sans-serif;
+}
+
+a {
+  color: rgb(194, 189, 189);
+  text-decoration: none;
+}
 
  /* .image-holder {
   background-size: cover;
@@ -23,7 +31,6 @@ img {
 table {
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 border-collapse: collapse;
-width: 100%;
 }
 
 td, th {
@@ -31,23 +38,27 @@ border: 1px solid #ddd;
 padding: 8px;
 }
 
+td:first-child {
+    width: 11%;
+}
+
 table tr:nth-child(even){background-color: #f2f2f2;}
 
 table tr:hover {background-color: #ddd;}
 
 table {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: left;
-background-color: rgb(151, 49, 83);
-color: white;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  opacity: 0.7;
 }
 
 
-
-
 h2 {
-  color : rgb(151, 49, 83);
+  color :#FFF;
 }
 
 * {
@@ -66,6 +77,11 @@ h2 {
   padding: 10px;
   height: 500px;
 }
+
+.thirdcol p a{
+  color:#FFF;
+  text-decoration: none;
+}
 .col-sm-6 {
   float: left;
   width:60%;
@@ -80,3 +96,33 @@ h2 {
   clear: both;
 } 
 
+.row{
+  background-image: url(../images/home_image4.jpeg);
+  color: black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
