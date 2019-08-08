@@ -1,26 +1,29 @@
 <html>
+        <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <script src="scripts/mainscripts.js"></script> 
     <link rel="stylesheet" href="css/mainpage.css">
-    <script src="js/bootstrap.min.js"></script>
-    
-    <Title>Food Blog</Title>
+    <link rel="shortcut icon" href="#" />
+    <!-- <script src="js/bootstrap.min.js"></script>         -->
+        </head>
+    <Title>Food Blog</Title>       
 
-    <body ng-app="myApp">
-                <ul>
-                    <li><a class="active" href="#!home">Home</a></li>
-                    <li><a href="#!Book">Books</a></li>
-                </ul>
-                <h1><b>FOOD BLOG</b></h1>
+    <body ng-app="myApp"> 
+       
+                
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <div class="row">
+                    <div class="menubar1">    
+                            <ul>
+                                <li><a href="#!home">Home</a></li>
+                                <li><a href="#!Book">Books</a></li>
+                            </ul>
+                        </div>  
                 <div class="col-sm-2">
                         <!-- <h2 id><a tabindex="0" href='#!Home'>Home</a></h2>
                         <h2 id><a tabindex="0" href='#!Book'>Books</a></h2> -->
@@ -28,7 +31,10 @@
                 </div>
    
                 <div class="col">
-                    <ng-view>  </ng-view>
+                    <h1>FOOD BLOG</h1>
+                   <div ng-show="!isBookPage" class="welcometxt"><marquee direction = "down">Welcome to food blog... This is best site for all the foodies..You can get various types of receipes.. Different receipe book are also available here..</marquee>
+                   </div>
+                   <ng-view></ng-view>
                 </div>
              
                 <div class="col-sm-3 thirdcol">

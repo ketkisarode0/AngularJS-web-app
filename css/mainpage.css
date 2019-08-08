@@ -1,12 +1,19 @@
 *:focus{
 outline:1px solid;
 }
+.foodapp{
+  font-family: sans-serif;
+}
 
 h1{
-  color: rgb(94, 40, 40);
-  background-color: rgb(209, 176, 143);
+  margin-top: 15px;
+  color:#FFF;
   text-align: center; 
-  font-style: Impact, Charcoal, sans-serif;
+  
+}
+.welcometxt{
+  color:#FFF;
+  height:auto;
 }
 
 a {
@@ -108,7 +115,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+
 }
 
 li {
@@ -124,5 +131,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+ color: silver;
+ text-decoration: none;
+
 }
