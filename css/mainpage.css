@@ -1,3 +1,34 @@
+.header{
+  color: #973153;
+  background-color: rgb(185, 214, 185);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav{
+  color: rgb(34, 27, 27);
+
+  background-color: rgb(185, 214, 185);
+  width:10%;
+  height:100%;
+  /* max-height: 150%; */
+}
+
+.col-sm-7{
+  
+  width:45%;
+  /* margin-left: 20%; */
+  padding: 10px;
+}
+
+.col-sm-3{
+  width:45%;
+  /* margin-left: 80%; */
+  padding: 10px;
+}
+
+
+
 *:focus{
 outline:1px solid;
 }
@@ -5,19 +36,14 @@ outline:1px solid;
   font-family: sans-serif;
 }
 
-h1{
-  margin-top: 15px;
-  color:#FFF;
-  text-align: center; 
-  
-}
+
 .welcometxt{
   color:#FFF;
   height:auto;
 }
 
 a {
-  color: rgb(194, 189, 189);
+  color: #ffff;
   text-decoration: none;
 }
 
@@ -35,7 +61,7 @@ img {
   height: 510px;
 }
 
-table {
+/* table {
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 border-collapse: collapse;
 }
@@ -61,8 +87,34 @@ table {
   color: #000;
   background: #fff;
   opacity: 0.7;
+} */
+
+.divtable
+{
+    display: table;
+    /* width:100%; */
+    background-color:transparent;
+    border:1px ;
+    border-spacing:5px;
+   
 }
 
+.divrow{ 
+   display:table-row;
+   width:100%;
+   border:1px solid transparent;
+}
+
+.divcell
+{
+    float:left;
+    display:table-column;
+    width:170px;
+    background-color:#ffff;
+    border: black;
+    border:1px solid black;
+
+}  */
 
 h2 {
   color :#FFF;
@@ -73,8 +125,8 @@ h2 {
 }
 
 
-/* Create three equal columns that floats next to each other */
-.div{
+
+/* .div{
   width:100%;
 }
 
@@ -94,7 +146,7 @@ h2 {
   width:60%;
   padding: 10px;
   height: 500px;
-}
+} */
 /* Clear floats after the columns */
 
 .row:after {
@@ -108,7 +160,10 @@ h2 {
   color: black;
   background-repeat: no-repeat;
   background-size: 100%;
+  height:100%;
 }
+
+
 
 ul {
   list-style-type: none;
@@ -124,7 +179,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -134,4 +189,12 @@ li a:hover {
  color: silver;
  text-decoration: none;
 
+}
+
+
+.footer{
+  text-align: center; 
+  color: #973153;
+  /* padding: 11px 0; */
+  background-color: rgb(25, 34, 25);
 }

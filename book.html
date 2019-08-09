@@ -6,21 +6,34 @@
            <input type="text" placeholder="Search here" ng-model="searchText"> <!-- filter to search inside table-->
         </div>  
            <br>  </br>
-             <table>
-              <thead>
-                 <tr>
-                     <th>BookId</th>
-                     <th>BookName</th>
-                     <th>Author</th>
-                 </tr>
-                </thead>
-                <tbody ng-repeat="b in Books | filter: searchText"> 
-                     <tr>
-                         <td>{{b.BookId}}</td>
-                         <td>{{b.BookName}}</td>
-                         <td>{{b.Author}}</td>
-                     </tr>
-                </tbody>                 
-             </table>
+           <div class="divtable">
+              <div class="divrow">
+                  <div class="divcell"><b>BookId</b></div>
+                  <div class="divcell"><b>BookName</b></div>
+                  <div class="divcell"><b>Author</b></div>
+              </div>
+              <div class="divrow" ng-repeat="b in Books | filter: searchText">
+                    <div class="divcell">{{b.BookId}}</div>
+                    <div class="divcell">{{b.BookName}}</div>
+                    <div class="divcell">{{b.Author}}</div>
+              </div>
+                <!-- <table>
+                        <thead>
+                           <tr>
+                               <th>BookId</th>
+                               <th>BookName</th>
+                               <th>Author</th>
+                           </tr>
+                          </thead>
+                          <tbody ng-repeat="b in Books | filter: searchText"> 
+                               <tr>
+                                   <td>{{b.BookId}}</td>
+                                   <td>{{b.BookName}}</td>
+                                   <td>{{b.Author}}</td>
+                               </tr>
+                          </tbody>                 
+                       </table> -->
+           </div>
+            
 </div>
                 

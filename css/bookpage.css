@@ -5,6 +5,10 @@ h1{
     background-color: antiquewhite;
   }
   
+header{
+  color: #973153;
+  
+}
   
    /* .image-holder {
     background-size: cover;
@@ -13,14 +17,14 @@ h1{
     width: 100%;
   } */
   
-  img {
+  /* img {
     width: 100%;
     padding-bottom: 2em;
     position: center;
     height: 510px;
   }
   
-  table {
+  .table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -42,9 +46,33 @@ h1{
   background-color:#973153;
   color: white;
   }
+   */
   
-  
-  
+   .divtable
+    {
+        display:  table;
+        width:100%;
+        background-color:#eee;
+        border:1px solid  black;
+        border-spacing:5px;
+       
+    }
+
+    .divrow
+    {
+       display:table-row;
+       width:auto;
+       border:1px solid  black;
+    }
+
+    .divcell
+    {
+        float:left;
+        display:table-column;
+        width:200px;
+        background-color:#ccc;
+        text-align: center;
+    } 
   
   h2 {
     color :#973153;

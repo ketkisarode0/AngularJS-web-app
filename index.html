@@ -9,29 +9,61 @@
     <script src="scripts/mainscripts.js"></script> 
     <link rel="stylesheet" href="css/mainpage.css">
     <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <script src="js/bootstrap.min.js"></script>         -->
-        </head>
-    <Title>Food Blog</Title>       
+</head>
+<Title>Food Blog</Title>       
+<body ng-app="myApp"> 
+        <div class="header">
+                <h1>FOOD BLOG</h1>
+        </div>
 
-    <body ng-app="myApp"> 
-       
+        <div class = "row">
+            <div class="nav">    
+                        <ul>
+                            <li><a tabindex="0" href="#!home"><b>Home</b></a></li>
+                            <li><a tabindex="0" href="#!Book"><b>Books</b></a></li>
+                        </ul>
+            </div>  
+            <div class="col-sm-7">
+                        <div ng-show="!isBookPage" class="welcometxt"><marquee direction = "down">Welcome to food blog... This is best site for all the foodies..You can get various types of receipes.. Different receipe book are also available here..</marquee>
+                        </div>
+                        <ng-view></ng-view>
+            </div>
+            <div class="col-sm-3">
+                     
+                        <h2>Receipes</h2>
+                        <p> <a href = "https://www.youtube.com/results?search_query=pizza+receipe+english" target="_blank"> &#9829; Yummy Cheese Pizza.. </a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Dhokala+Receipe+english"> &#9829; Dhokala Receipe...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Sandwitch+in+5+minutes"> &#9829; Sandwitch in 5 minutes...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Palak+parathas">&#9829; Palak parathas...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Paneer+butter+masala">&#9829; Paneer butter masala...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=+Dumm+Biryani+receipe"> &#9829; Dumm Biryani...</a></p>
+                        <p> <a href = "https://www.youtube.com/results?search_query=pizza+receipe+english" target="_blank"> &#9829; Yummy Cheese Pizza.. </a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Dhokala+Receipe+english"> &#9829; Dhokala Receipe...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Sandwitch+in+5+minutes"> &#9829; Sandwitch in 5 minutes...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Palak+parathas">&#9829; Palak parathas...</a></p>
+                        <p><a href = "https://www.youtube.com/results?search_query=Paneer+butter+masala">&#9829; Paneer butter masala...</a></p>
+                        
+                        
+                   
+                       </div>
+                     
+
+        </div>
+        <div class="footer">
+                        <p>This is footer</p>
+                </div>
+        <!-- <div class="row">
                 
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <div class="row">
-                    <div class="menubar1">    
-                            <ul>
-                                <li><a href="#!home">Home</a></li>
-                                <li><a href="#!Book">Books</a></li>
-                            </ul>
-                        </div>  
+        
                 <div class="col-sm-2">
-                        <!-- <h2 id><a tabindex="0" href='#!Home'>Home</a></h2>
-                        <h2 id><a tabindex="0" href='#!Book'>Books</a></h2> -->
+                        
                                            
                 </div>
    
                 <div class="col">
-                    <h1>FOOD BLOG</h1>
+                    
                    <div ng-show="!isBookPage" class="welcometxt"><marquee direction = "down">Welcome to food blog... This is best site for all the foodies..You can get various types of receipes.. Different receipe book are also available here..</marquee>
                    </div>
                    <ng-view></ng-view>
@@ -49,8 +81,12 @@
                      
                 
                     </div>
-            </div>  
+            
+            
+        </div>   -->
 
+
+     
         
     </body>
 </html>
